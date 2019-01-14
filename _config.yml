@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle:
-description:
-keywords:
-author: John Doe
-language:
-timezone:
+title: caoweiju's blog
+subtitle: fe_node_react_chrome_vue_javascript
+description: 个人技术文章记录
+keywords: 技术——JavaScript——前端
+author: weiju.cao
+language: chinese
+timezone: +0800
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: https://www.caoweiju.coms
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
