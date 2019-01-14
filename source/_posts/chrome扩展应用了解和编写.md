@@ -20,6 +20,8 @@ categories:
 3. 扩展应用程序：`chrome://extensions/`
 4. 侦测页面[包括外接安卓设备]：`chrome://inspect/#devices`
 
+<!-- more -->
+
 比较全的的列表：
 ````
 （1）chrome://accessibility/
