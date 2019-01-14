@@ -4,12 +4,12 @@
 
 # Site
 title: caoweiju's blog
-subtitle: fe_node_react_chrome_vue_javascript
+subtitle: 个人技术文章记录
 description: 个人技术文章记录
-keywords: 技术——JavaScript——前端
+keywords: 技术 JavaScript 前端
 author: weiju.cao
-language: chinese
-timezone: +0800
+language: zh-Hans
+timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
@@ -73,7 +73,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
