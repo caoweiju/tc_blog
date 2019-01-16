@@ -2,11 +2,10 @@
 title: chrome扩展应用了解和编写
 date: 2019-01-14 23:30:03
 tags:
-- ecma
-- babel
-- tc39
+- plugin
+- chrome
 categories: 
-- JavaScript
+- tool
 ---
 # chrome浏览器
 1. `Chrome `浏览器追求的是全方位的快速体验。它不仅能飞快地从桌面上启动，而且能瞬间完成网页加载，还能以闪电般的速度运行网络应用。

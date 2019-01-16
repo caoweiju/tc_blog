@@ -2,6 +2,11 @@
 title: ecma5|6|201x和babel
 date: 2019-01-14 23:50:41
 tags:
+- ecma
+- babel
+- tc39
+categories: 
+- JavaScript
 ---
 # ecma
 * 中文名: 欧洲计算机制造联合会 
