@@ -5,7 +5,7 @@ tags:
 - date
 - 运算符
 categories: 
-- javascript
+- JavaScript
 ---
 # Date
 `Date `对象用于处理日期与时间。
