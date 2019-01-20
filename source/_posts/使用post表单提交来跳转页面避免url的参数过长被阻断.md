@@ -20,6 +20,8 @@ categories:
 4. 插入`dom`中，设置不可见
 5. 通过`submit`来提交
 
+<!-- more -->
+
 基本原生`javascript`的使用：
 ````
 <!DOCTYPE html>
@@ -85,6 +87,7 @@ categories:
 ````
 需要注意：
 1. 遇到同名的参数的时候，需要注意参数值的处理，可以看看结果如下图：
+
 ![图片描述][./../../imgs/posturl.png]
 
 
