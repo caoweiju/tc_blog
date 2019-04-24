@@ -1,4 +1,6 @@
 ## 个人博客
+https://img.shields.io/badge/build-passed-green.svg
+地址：[个人博客](https://www.caoweiju.com)
 ````
 .
 ├── _config.yml
