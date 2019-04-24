@@ -1,5 +1,6 @@
 ## 个人博客
-https://img.shields.io/badge/build-passed-green.svg
+[![blog](https://img.shields.io/badge/build-passed-green.svg)](https://github.com/caoweiju/tc_blog)
+
 地址：[个人博客](https://www.caoweiju.com)
 ````
 .
