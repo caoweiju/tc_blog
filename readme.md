@@ -2,7 +2,7 @@
 [![blog](https://img.shields.io/badge/build-passed-green.svg)](https://github.com/caoweiju/tc_blog)
 [![blog](https://img.shields.io/badge/version-v0.0.1-orange.svg)](https://www.caoweiju.com/)
 
-地址：[个人博客](https://www.caoweiju.com)
+地址：[caoweiju的个人博客](https://www.caoweiju.com)
 ````
 .
 ├── _config.yml
