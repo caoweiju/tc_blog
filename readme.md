@@ -5,6 +5,7 @@
 - [x] 完成搭建
 - [x] 完成私有域名的映射和https的支持
 - [ ] 更新文章内容
+- [ ] 完善文章内容
 
 地址：[caoweiju的个人博客](https://www.caoweiju.com)
 ````
