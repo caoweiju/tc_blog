@@ -2,6 +2,12 @@
 [![blog](https://img.shields.io/badge/build-passed-green.svg)](https://github.com/caoweiju/tc_blog)
 [![blog](https://img.shields.io/badge/version-v0.0.1-orange.svg)](https://www.caoweiju.com/)
 
+- [x] 区分个人git config和公司git config
+- [x] 完成搭建
+- [x] 完成私有域名的映射和https的支持
+- [ ] 更新文章内容
+- [ ] 完善文章内容
+
 地址：[caoweiju的个人博客](https://www.caoweiju.com)
 ````
 .
