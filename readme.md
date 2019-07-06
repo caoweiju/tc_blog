@@ -27,7 +27,7 @@
 
 ````
 地址：[个人博客](https://www.caoweiju.com)
-使用hexo+next主题+netlify部署完成，里面主要是包含个人的一些技术文章之类的。
+使用hexo+next主题+netlify部署完成，里面主要是包含个人的一些技术文章之类的，包括一些比较琐碎的内容。
 
 * [关于hexo](https://github.com/hexojs/hexo)
 * [关于hexo-theme-next](https://github.com/iissnan/hexo-theme-next)
