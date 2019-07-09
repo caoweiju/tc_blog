@@ -48,8 +48,25 @@ React Native完美兼容使用Objective-C、Java或是Swift编写的组件。 �
 * View.props.onResponderTerminate: (evt) => {}
     响应者权力已经交出。这可能是由于其他 View 通过onResponderTerminationRequest请求的，也可能是由操作系统强制夺权（比如 iOS 上的控制中心或是通知中心）。
 
+**某个组件成为当前手势响应者的话，那么将会阻止手势和相应事件的冒泡，单一手势操作只有一个响应者**
+
+在使用的时候就会影响手势作用的组件，目前封装好的`touchable**`组件内部如果没有其他的`touchable**`子组件，那么将会默认成为在该组件上手势的响应者。
+**最底层的`touchable**`组件在默认情况下会成为对应区域手势的最优先响应者**
+
+看这样一个例子，这是一个在`TouchableWithoutFeedback`组件的内部，有一个滚动组件，如果不让内部的`ScrollView`先作为手势响应者，会导致`ScrollView`组件不滚动，
+````
+<TouchableWithoutFeedback onPress={() => {}}>
+    {other content}   
+    <View>
+        <ScrollView onStartShouldSetResponder={() => true}>
+            {scrollable content}
+        </ScrollView>
+    </View>
+</TouchableWithoutFeedback>
+````
+
 ## PanResponder的学习使用
-[PanResponder类可以将多点触摸操作协调成一个手势](https://facebook.github.io/react-native/docs/panresponder), 
+[PanResponder类可以将多点触摸操作协调成一个手势](https://facebook.github.io/react-native/docs/panresponder), 上面说了，在任何组件上都可以添加`on[StartShouldSet|MoveShouldSet]Responder[Grant|Reject|Move|Release|Termination|TerminationRequest]`属性来设置响应手势，而`PanResponder`可以快捷的设置这些属性，添加到对应的组件上。如下面的示例：
 ````
 componentWillMount: function() {
     this._panResponder = PanResponder.create({
