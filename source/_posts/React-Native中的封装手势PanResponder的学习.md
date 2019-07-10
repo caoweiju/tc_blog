@@ -8,15 +8,19 @@ categories:
 ---
 
 # react-native
-> React Native使你只使用JavaScript也能编写原生移动应用。 它在设计原理上和React一致，通过声明式的组件机制来搭建丰富多彩的用户界面。
+> `React Native`使你只使用`JavaScript`也能编写原生移动应用。 它在设计原理上和React一致，通过声明式的组件机制来搭建丰富多彩的用户界面。
 
-React Native产出的并不是“网页应用”， 或者说“HTML5应用”，又或者“混合应用”。 最终产品是一个真正的移动应用，从使用感受上和用Objective-C或Java编写的应用相比几乎是无法区分的。 React Native所使用的基础UI组件和原生应用完全一致。 你要做的就是把这些基础组件使用JavaScript和React的方式组合起来。
+`React Native`产出的并不是“网页应用”， 或者说“HTML5应用”，又或者“混合应用”。 最终产品是一个真正的移动应用，从使用感受上和用Objective-C或Java编写的应用相比几乎是无法区分的。 `React Native`所使用的基础UI组件和原生应用完全一致。 你要做的就是把这些基础组件使用JavaScript和React的方式组合起来。
 
-React Native完美兼容使用Objective-C、Java或是Swift编写的组件。 如果你需要针对应用的某一部分特别优化，中途换用原生代码编写也很容易。 想要应用的一部分用原生，一部分用React Native也完全没问题 —— Facebook的应用就是这么做的。
+`React Native`完美兼容使用`Objective-C`、`Java`或是`Swift`编写的组件。 如果你需要针对应用的某一部分特别优化，中途换用原生代码编写也很容易。 想要应用的一部分用原生，一部分用`React Native`也完全没问题 —— Facebook的应用就是这么做的。
 
 ## 手势系统
 
-移动设备上的手势识别要比在 web 上复杂得多。用户的一次触摸操作的真实意图是什么，App 要经过好几个阶段才能判断。比如 App 需要判断用户的触摸到底是在滚动页面，还是滑动一个 widget，或者只是一个单纯的点击。甚至随着持续时间的不同，这些操作还会转化。此外，还有多点同时触控的情况。
+移动设备上的手势识别要比在 web 上复杂得多。用户的一次触摸操作的真实意图是什么，App 要经过好几个阶段才能判断。比如 App 需要判断用户的触摸到底是在滚动页面，还是滑动一个 `widget`，或者只是一个单纯的点击。甚至随着持续时间的不同，这些操作还会转化。此外，还有多点同时触控的情况。
+
+在没有单独设置手势相关的处理的props时，有以下组件会自动申请成为手势响应者：
+* `touchablehighlight`、`touchableopacity`、`TouchableNativeFeedback`、`touchablewithoutfeedback`这些`touchable**`组件在层级中会优先成为手势的响应者，而且是在手势触摸开始的瞬间，也就是不论是点击、触摸、滑动等都会先申请成为响应者，由系统决定是否授权。
+* `scrollView`、`sectionList`、`flatList`之类的滚动组件，会自动在组件`onMoveShouldSetResponder`申请成为响应者，不过需要注意的是`onMoveShouldSetResponder`返回`true`或者`false`，是根据滚动组件的设置的滚动方向【水平--垂直】来判断的，也就是会根据手势滑动的第一瞬间判断是响应水平滑动还是垂直滑动，在使用`PanResponder`的事件中的`gestureState`可以获取`vx、vy`【水平、垂直移动速度】来判断手势是水平滑动还是垂直滑动。
 
 **手势响应系统可以使组件在不关心父组件或子组件的前提下自行处理触摸交互。**
 
@@ -107,5 +111,32 @@ componentWillMount: function() {
       <View {...this._panResponder.panHandlers} />
     );
   },
+````
+
+原生事件是指由以下字段组成的合成触摸事件：nativeEvent：
+````
+changedTouches - 在上一次事件之后，所有发生变化的触摸事件的数组集合（即上一次事件后，所有移动过的触摸点）
+identifier - 触摸点的 ID
+locationX - 触摸点相对于父元素的横坐标
+locationY - 触摸点相对于父元素的纵坐标
+pageX - 触摸点相对于根元素的横坐标
+pageY - 触摸点相对于根元素的纵坐标
+target - 触摸点所在的元素 ID
+timestamp - 触摸事件的时间戳，可用于移动速度的计算
+touches - 当前屏幕上的所有触摸点的集合
+````
+一个gestureState对象有如下的字段：
+````
+stateID - 触摸状态的 ID。在屏幕上有至少一个触摸点的情况下，这个 ID 会一直有效。
+moveX - 最近一次移动时的屏幕横坐标
+moveY - 最近一次移动时的屏幕纵坐标
+x0 - 当响应器产生时的屏幕坐标
+y0 - 当响应器产生时的屏幕坐标
+dx - 从触摸操作开始时的累计横向路程
+dy - 从触摸操作开始时的累计纵向路程
+vx - 当前的横向移动速度
+vy - 当前的纵向移动速度
+numberActiveTouches - 当前在屏幕上的有效触摸点的数量
+
 ````
 
