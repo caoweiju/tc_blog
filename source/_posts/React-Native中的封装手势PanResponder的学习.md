@@ -31,6 +31,7 @@ categories:
 * View.props.onStartShouldSetResponder: (evt) => true
     在用户开始触摸的时候（手指刚刚接触屏幕的瞬间），是否愿意成为响应者？
     这个方法只会在手势接触屏幕的第一瞬间响应，所以一次在屏幕上间断或者连续的未离开屏幕的操作都不会再次触发，
+    如果子组件中存在`touchable**`组件，那么这个onStartShouldSetResponder方法将会被拦截住，这种情况可以考虑使用`onStartShouldSetPanResponderCapture`
 * View.props.onMoveShouldSetResponder: (evt) => true
     如果 View 不是响应者，那么在每一个触摸点(手指触点)移动（没有停下也没有离开屏幕）时，询问一次：是否愿意响应触摸交互呢？  如果 View 返回 true，并开始尝试成为响应者，
     由于这个操作会属性会被频繁调用，所以目前有一些默认的条件会导致不触发：
