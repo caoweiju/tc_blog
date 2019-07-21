@@ -48,6 +48,7 @@ categories:
 10. 实现动画或者交互效果的时候，慎重使用reduce里的数据。因为使用action更新数据会相比setState有更长的延时。涉及动画或复杂交互，建议用setState来更新
 11. TextInput 只设 Padding 不设宽度，自适应有问题，文本展示不全
 12. 使用 zIndex 在iOS 设备上不一定会符合显示要求
+13. scrollview和touchabe组件之间的相互嵌套和多层级嵌套，会存在滚动和点击问题【暂时没有好的梳理】
 
 ## 安卓坑点
 1. TextIput出现黑色下划线`<TextInput underlineColorAndroid={'transparent'} /> `
