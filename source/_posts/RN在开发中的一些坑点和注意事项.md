@@ -49,6 +49,7 @@ categories:
 11. TextInput 只设 Padding 不设宽度，自适应有问题，文本展示不全
 12. 使用 zIndex 在iOS 设备上不一定会符合显示要求
 13. scrollview和touchabe组件之间的相互嵌套和多层级嵌套，会存在滚动和点击问题【暂时没有好的梳理】
+14. RN开发中，他的js是在jscore运行，里面保存的数据多各相同路径的页面是共享的，如果history链路上存在相同的页面，需要考虑数据共用和被缓存的情况。
 
 ## 安卓坑点
 1. TextIput出现黑色下划线`<TextInput underlineColorAndroid={'transparent'} /> `
@@ -73,6 +74,8 @@ categories:
 13. Text等基础组件color、size等属性设置缺失，造成两端展示不一致
 14. RN小米手机UI适配问题解决,文本截断不展示完整，给展示不全的文本，设置一个fontFamily属性，值为空''，展示不全和不容截断就都能解决
 15. 使用`&&`可以进行条件渲染，但是实际使用时在`Android`上渲染会出现问题，导致`View`显示问题，使用双重取反` !!Condition && <View/>`
+16. 安卓上的scrollView组件没有出示contentoffset，为了设置出示偏移，一般使用一些回调或者异步requestAnimationFrame、InteractionManager.createInteractionHandle、onContentSizeChange、onLayout、contentContainerStyle来调用 scrollTo方法来实现，这样会出现闪烁的情况，可以考虑scrollView的内容分两次渲染来解决
+17. 安卓上text设置的fontsize和lineHeight一样的话，如果有fontWeight加粗，会出现加粗字体展示不全的情况。
 
 
 ## IOS的坑点
