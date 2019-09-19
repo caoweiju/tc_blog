@@ -37,8 +37,14 @@
 
 * [关于hexo](https://github.com/hexojs/hexo)
 * [关于hexo-theme-next](https://github.com/iissnan/hexo-theme-next)
+* 目前使用的是submodule的形式将next主题引入。
 * 关于简单定制next主题部分，本人使用[Theme configurations using Hexo data files](https://github.com/iissnan/hexo-theme-next/issues/328)
 * 需要深度定制的人：可以先`fork`一份`hexo-theme-next`，然后通过`submodule||subtreee`来把`next`主题当做子项目引入，不过这需要用户能够管理好`fork`分支，跟进`master`的`update`和`bugfix`
 * 关于服务部署[netlify部署](https://app.netlify.com)，参考教程[step-by-step搭建流程](https://www.netlify.com/blog/2015/10/26/a-step-by-step-guide-hexo-on-netlify/)
 
-[简单徽章制作来源](https://shields.io/)
+[简单徽章制作来源](https://shields.io/) 
+
+启动过程：
+- 工程拉去 `git clone --recursive gitAddress` ; `--recursive`会拉去子模块仓库
+- 安装依赖`npm i`
+- 启动服务`npm start`

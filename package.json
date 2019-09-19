@@ -5,6 +5,10 @@
   "hexo": {
     "version": "3.8.0"
   },
+  "scripts": {
+    "build": "./node_modules/hexo/bin/hexo generate",
+    "start": "./node_modules/hexo/bin/hexo generate && ./node_modules/hexo/bin/hexo server"
+  },
   "dependencies": {
     "hexo": "^3.7.0",
     "hexo-generator-archive": "^0.1.5",
