@@ -170,7 +170,7 @@ $ chmod 700 ~/.ssh
 ````
 这就是通过`“ProxyCommand”`选项，机器A能够灵活使用任意代理机制与机器C上的`SSH Server`端口建立连接，接着机器A上的`SSH Client`再与该连接进行数据交互，从而机器A上的`SSH Client`与机器C上的`SSH Server`之间建立了与一般“直接SSH连接”不太一样的“间接SSH连接”。不过由于“间接SSH连接”的透明性，逻辑上可认为机器A上的`SSH Client`与机器C上的`SSH Server`建立了“直接SSH连接”。
 
-![clipboard.png](./../../imgs/ssh.png)
+![clipboard.png](http://pzdgkztjy.bkt.clouddn.com/blog/img/ssh.png)
 
 本机、跳板机、目标机器三者已经做过公钥认证(如果不做密钥认证就会提示分别输入跳板机和目标机器的密码，需要多输入两次密码比较繁琐);下面的案例前提都是我们可以免密登入跳板机；
 ````

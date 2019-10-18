@@ -261,7 +261,7 @@ Date.prototype[@@toPrimitive]
 #### 二元加法获取date的值；
 
 [加法运算](https://www.ecma-international.org/ecma-262/5.1/#sec-11.6.1)
-![clipboard.png](./../../imgs/js_date.png)
+![clipboard.png](http://pzdgkztjy.bkt.clouddn.com/blog/img/js_date.png)
 
 上图中的NOTE 1说，在步骤5和6中的ToPrimitive调用没有提供hint，除了Date对象之外所有ECMAScript对象将缺少hint的情况当做Number处理；
 
@@ -291,7 +291,7 @@ date的`toPrimitive`调用，不传递hint的时候，默认是`string`；
 '+'号运算符作为一元运算符时，Expression将进行[ToNumber](http://www.ecma-international.org/ecma-262/6.0/#sec-tonumber)操作。
 
 
-![clipboard.png](./../../imgs/js_date2.png)
+![clipboard.png](http://pzdgkztjy.bkt.clouddn.com/blog/img/js_date2.png)
 
 可以看到，此时date的toPrimitive调用，传递hint是number，返回毫秒数；
 

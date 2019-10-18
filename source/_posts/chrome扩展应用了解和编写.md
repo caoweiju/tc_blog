@@ -184,7 +184,7 @@ webrtc日志信息
 * `Options Page` 【扩展可供用户配置的页面，用于修改扩展中的一些默认配置参数】
 
 
-![clipboard.png](./../../imgs/chrome_ext.png)
+![clipboard.png](http://pzdgkztjy.bkt.clouddn.com/blog/img/chrome_ext.png)
 
 ### 一个改变当前查看页面的背景色的扩展插件实现
 

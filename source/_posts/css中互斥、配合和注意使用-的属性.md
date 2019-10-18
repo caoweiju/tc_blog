@@ -64,7 +64,7 @@ categories:
 >* 堆叠层级为 0 的子堆叠上下文（child stacking contexts）和堆叠层级为 0 的定位的后代元素
 >* 堆叠层级为正的子堆叠上下文
 
-![图片描述](./../../imgs/stack_level.png)
+![图片描述](http://pzdgkztjy.bkt.clouddn.com/blog/img/stack_level.png)
 
 重复一下这两铁律：
 1. **`z-index只能在position属性值为relative或absolute或fixed的元素上有效。【flex子项除外】`**
