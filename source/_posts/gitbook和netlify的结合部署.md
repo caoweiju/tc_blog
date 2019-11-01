@@ -52,8 +52,10 @@ categories:
     *.pdf
     ````
 2. 项目变更为git项目`git init`
-3. 项目变更为git项目并添加修改`git add .`，然后进行commit
+3. 项目变更为git项目并添加修改`git add .`，然后进行commit `git commit -m "init:初始化"`
 4. 在github上面添加新的仓库工程，并提交
+    - git remote add origin ssh://git****.git
+    - git push --set-upstream origin master
 
 
 服务部署：
