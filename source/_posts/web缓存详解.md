@@ -6,8 +6,10 @@ tags:
 categories: 
 - Web
 ---
-#web浏览器缓存
+
+# web浏览器缓存
 没有缓存的世界，每次请求都是严格意义上的新的请求，那么服务器端的压力可想而知，客户端的响应速度也是大打折扣，就是我们在写程序也知道需要缓存，把一些常用的数据缓存区来，避免每次都要重新读取，特别是前端在进行元素获取时，虽然链式调用让我们很舒服，但是如果每次都需要重新获取这个元素的话，最好还是使用变量缓存起来比较好。
+
 ## 设置缓存
 目前比较常见的缓存机制包括以下几种[都是设置http header]：
 * Expires
@@ -15,6 +17,12 @@ categories:
 * Last-Modified/If-Modified-Since：Last-Modified/If-Modified-Since要配合Cache-Control使用。
 * Etag/If-None-Match：Etag/If-None-Match也要配合Cache-Control使用
 
+还有一些升级设置缓存内容：
+- cookie
+- localSatorage、sessionStorage
+- indexedDB
+- application cache
+- service worker + cache storage
 <!-- more -->
 
 一个实际资源访问的响应头部部分信息如下：

@@ -13,7 +13,14 @@ categories:
 2. localStorage
 3. sessionStorage
 
-这里再一次清晰地记录下这其中的一些知识点；
+这里再一次清晰地记录下这其中的一些知识点；当然整个浏览器提供的缓存有很多方式：
+
+1. 浏览器缓存（Browser Caching），通过request header来设置资源缓存
+2. websql，不是HTML的规范，也在逐步废弃
+3. IndexedDB 浏览器中非关系型数据库，数据存在浏览器安装的地方
+4. cookie、localstorage、sessionStorage
+5. application cache 通过定义缓存列表来离线缓存资源，逐步废弃中
+6. cacheStorage：CacheStorage是在ServiceWorker的规范中定义的。CacheStorage 可以保存每个serverWorker申明的cache对象，cacheStorage有open、match、has、delete、keys五个核心方法，可以对cache对象的不同匹配进行不同的响应。
 
 <!-- more -->
 
