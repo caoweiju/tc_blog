@@ -20,9 +20,10 @@ categories:
 还有一些升级设置缓存内容：
 - cookie
 - localSatorage、sessionStorage
-- indexedDB
-- application cache
-- service worker + cache storage
+- Web SQL：已经废弃的部分，规范推荐使用类似的indexedDB
+- indexedDB:【异步缓存】IndexedDB是一种低级API，用于客户端存储大量结构化数据(包括, 文件/ blobs)。该API使用索引来实现对该数据的高性能搜索。
+- application cache: 已经不再支持，在新版本的firefox和chrome中，考虑使用service workers，而service workers使用 Cache Storage
+- service worker + cache storage：CacheStorage 接口表示 Cache 对象的存储。它提供了一个 ServiceWorker 、其它类型worker或者 window 范围内可以访问到的所有命名cache的主目录
 <!-- more -->
 
 一个实际资源访问的响应头部部分信息如下：
