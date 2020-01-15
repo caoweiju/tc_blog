@@ -116,6 +116,14 @@ newline""
 ````
 被解析后的字符串变了样子，这些解析后的字符串不再符合JSON的格式，所以解析就会报错了。[详情参考：从一个 JSON.parse 错误深入研究 JavaScript 的转义字符](https://zhuanlan.zhihu.com/p/31030352)
 
+那么如果想要正确的处理这些内容应该如何处理？`JSON.parse(String.raw`"2\t2"`)`，如下：
+````
+String.raw`"2\t2"`
+""2\t2""
+JSON.parse(String.raw`"2\t2"`)
+"2	2"
+````
+
 #### number
 数值（number）也与C或者Java的数值非常相似。除去未曾使用的八进制与十六进制格式。除去一些编码细节。
 
