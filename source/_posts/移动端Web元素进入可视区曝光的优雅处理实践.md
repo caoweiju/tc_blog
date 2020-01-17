@@ -41,7 +41,7 @@ categories:
 *本方案注意：需要注意检测当前可视区元素方法*
 
 ## IntersectionObserver优雅实践
-
+[IntersectionObserver](https://developer.mozilla.org/zh-CN/docs/Web/API/IntersectionObserver) 和 [IntersectionObserverEntry](https://developer.mozilla.org/zh-CN/docs/Web/API/IntersectionObserverEntry) 
 
 
 
