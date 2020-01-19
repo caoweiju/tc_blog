@@ -41,7 +41,7 @@ categories:
 
 接着，我们来看一张图咯：
 
-![clipboard.png](http://pzdgkztjy.bkt.clouddn.com/blog/img/prefetch.png)
+![clipboard.png](http://huananimg.zanmeizhuen.com/blog/img/prefetch.png)
 
 此图告诉我们以下几个要点：
 

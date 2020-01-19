@@ -88,7 +88,7 @@ categories:
 需要注意：
 1. 遇到同名的参数的时候，需要注意参数值的处理，可以看看结果如下图：
 
-![图片描述][http://pzdgkztjy.bkt.clouddn.com/blog/img/posturl.png]
+![图片描述][http://huananimg.zanmeizhuen.com/blog/img/posturl.png]
 
 
   [1]: /img/bVZasX

@@ -11,7 +11,7 @@ categories:
 
 一般而言，任何一个人的`github`主页都有一个这样的方格图；
 
-![clipboard.png](http://pzdgkztjy.bkt.clouddn.com/blog/img/contributes.png)
+![clipboard.png](http://huananimg.zanmeizhuen.com/blog/img/contributes.png)
 
 每一个小格代表了`one day`，不同的颜色深度，代表了不同的`contributions`次数，那么这个次数是怎么计算的呢？本文的翻译就是上图底部的蓝色链接中的[Learn how we count contributions.](https://help.github.com/articles/why-are-my-contributions-not-showing-up-on-my-profile/)
 
