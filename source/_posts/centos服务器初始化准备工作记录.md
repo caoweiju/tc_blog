@@ -29,6 +29,7 @@ categories:
 ### 服务端nginx使用
 安装和配置使用相关可以参考：nginx: https://yq.aliyun.com/articles/699966
 
+
 可以通过acme来自动生成证书，会需要对域名进行验证，可以设置查看是不是自己的域名，对于阿里云的域名可以通过关联ID来验证；
 https证书部分： https://github.com/Neilpang/acme.sh/wiki/%E8%AF%B4%E6%98%8E 
     https://github.com/Neilpang/acme.sh/wiki/How-to-install
