@@ -48,3 +48,10 @@
 - 工程拉去 `git clone --recursive gitAddress` ; `--recursive`会拉去子模块仓库
 - 安装依赖`npm i`
 - 启动服务`npm start`
+
+## 新增文章
+
+1. npm install hexo-cli -g
+2. hexo new "your artical name"
+3. 进入工程目录 '/tc_blog/source/_posts'，找到新建文件，进行编辑
+4. 保存并提交
